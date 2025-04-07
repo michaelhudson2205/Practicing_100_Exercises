@@ -61,3 +61,22 @@ if d >= 0:
     print("Positive, or zero")
 else:
     print("Negative")
+
+# ===Exercise 7===
+# Write a program that asks the user for their age, then stores it in a
+# variable. The program should check whether the user is older or
+# younger than 18 years. If the user's age is greater than or equal to 18,
+# the program should display "The user is a legal adult", otherwise "The
+# user is a minor".
+
+# Request user age
+age = input("How old are you?")
+
+# Convert age to int
+age = int(age)
+
+# Case distinction
+if age >= 18:
+    print("The user is a legal adult")
+else:
+    print("The user is a minor")
