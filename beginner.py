@@ -114,10 +114,16 @@ while counter <= 20:
     counter += 1
 
 # >>>===Exercise 10===<<<
-
+# Write the instruction that creates a list of numbers from 1 to 10
+# using list comprehension.
+L = [i for i in range(1, 11)]
+print(L)
 
 # >>>===Exercise 11===<<<
-
+# Write the instruction that creates a list of even numbers from 1
+# to 10 using list comprehension.
+L = [i for i in range(1, 11) if i % 2 == 0]
+print(L)
 
 # >>>===Exercise 12===<<<
 
