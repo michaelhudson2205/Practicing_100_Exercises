@@ -97,7 +97,21 @@ while counter <= 20:
     counter += 1
 
 # >>>===Exercise 9===<<<
+# Write a Python program that displays only the odd numbers between 10
+# and 20 inclusive. Create two versions, one with the for loop and the
+# other with the while loop.
 
+# for loop
+for i in range(10, 21):
+    if i % 2 == 1:
+        print(i)
+
+# while loop
+counter = 10
+while counter <= 20:
+    if counter % 2 == 1:
+        print(counter)
+    counter += 1
 
 # >>>===Exercise 10===<<<
 
