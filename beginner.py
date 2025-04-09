@@ -126,16 +126,54 @@ L = [i for i in range(1, 11) if i % 2 == 0]
 print(L)
 
 # >>>===Exercise 12===<<<
+# Write the instructions that create the list L and assign it the value
+# [6, 8, 3, 4, 1, 12, 2, 9.2], then sort the numbers in the list in
+# ascending order. The program should display the list L after sorting
+# the numbers
 
+# Declaration of the list L
+L = [6, 8, 3, 4, 1, 12, 2, 9.2]
+L.sort()
+print(L)
+
+# to do descending order
+L.sort(reverse=True)
+print(L)
 
 # >>>===Exercise 13===<<<
+# Write the instructions that create the list L and assign it the value
+# [3, 2, 2, 1, 9, 1, 2, 3, 7], then calculate the number of occurrences
+# of the number 1 in the list L.
 
+# Declaration of the list L
+L = [3, 2, 2, 1, 9, 1, 2, 3, 7]
+L.count(1)
 
 # >>>===Exercise 14===<<<
-
+# Write the instructions that create an empty list L and then add the
+# intergers 10, 25, 30, 45, 90, and the strings "ab", "cd", "ef" to it.
 
 # >>>===Exercise 15===<<<
+# Write a program that creates the list L and assigns it the value
+# [1,2,3,4,5,6,7,8,9,10], then creates a new list that takes every
+# third element from the list L. In this case we should end up with
+# the following list: [1,4,7,10]
 
+# 1st method
+# Empty list
+L1 = []
+
+# adding elements
+L1 += [10, 25, 30, 45, 90, "ab", "cd", "ef"]
+print(L1)
+
+# 2nd method
+# Empty list
+L2 = []
+elt_to_add = [11, 22, 33, 44, 99, "gh", "ij", "kl"]
+for elt in elt_to_add:
+    L2.append(elt)
+print(L2)
 
 # >>>===Exercise 16===<<<
 
