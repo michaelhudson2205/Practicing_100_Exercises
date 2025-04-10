@@ -176,16 +176,78 @@ for elt in elt_to_add:
 print(L2)
 
 # >>>===Exercise 16===<<<
+# Write the instructions to sort a string in ascending alphabetical order.
+# For testing, take the string c = "france".
+# The program should output "acefnr"
 
+# string declaration
+c1 = "france"
+
+# order the string in ascending order
+c2 = sorted(c)
+
+# take a look
+print(c2)
+
+# convert the resulting list into a string
+c3 = "".join(c2)
+print(c3)
+
+# order the original string in descending order etc.
+c4 = sorted(c, reverse=True)
+print(c4)
+c5 = "".join(c4)
+print(c5)
 
 # >>>===Exercise 17===<<<
+# Write a program that, given two lists L1 and L2, returns a list L3
+# containing the common elements between L1 and L2.
+# For testing, we will take the lists:
+# L1 = [9,8,7,14,3,2,"a","p","hello","b"]
+# L2 = ["b",1,9.2,6,3,9,"p"]
 
+# Declaration of lists
+L1 = [9, 8, 7, 14, 3, 2, "a", "p", "hello", "b"]
+L2 = ["b", 1, 9.2, 6, 3, 9, "p"]
+
+# convert lists to sets
+# then take intersection of these two sets
+L3 = set(L2).intersection(set(L1))
+
+# take a look
+print(L3)
+
+# convert L3 to a list
+L3 = list(L3)
+print(L3)
 
 # >>>===Exercise 18===<<<
+# Write a program that sorts a list of tuples, L, in ascending order
+# based on the second element of each tuple.
+# The list is:
+# L = [("Apple", 15), ("Banana", 8), ("Strawberry", 12),
+# ("Kiwi", 9), ("Peach", 2)]
+# The resulting list L after sorting should be:
+# L = [("Peach", 2), ("Banana", 8), ("Kiwi", 9),
+# ("Strawberry", 12), ("Apple", 15)]
 
+# creation of a list of tuples
+L = [("Apple", 15), ("Banana", 8), ("Strawberry", 12), ("Kiwi", 9), ("Peach", 2)]
+
+# sort the list of tuples in ascending order
+# according to the second element of the tuples
+L.sort(key=lambda x: x[1])
+print(L)
 
 # >>>===Exercise 19===<<<
+# Write a program that allows you to reverse a string.
+# The program should reverse the variable ch containing
+# the phrase "Hello everyone"
+ch = "Hello everyone"
 
+# reverse the string ch
+ch_reverse = ch[::-1]
+print(ch_reverse)
 
 # >>>===Exercise 20===<<<
 
