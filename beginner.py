@@ -315,30 +315,86 @@ L
 
 # >>>===Exercise 27===<<<
 # Write a program that allows you to retrieve the extension of a file.
+import os
 
+file_path = r"C:\Users\billy.blogs\some_notebook.ipynb"
+
+# retrieve file name
+file_name = os.path.basename(file_path)
+
+# convert the file name to a list, and retrieve the
+# last element of this list which represents the extension
+extension_file = file_name.split(".")[-1]
+
+print("File extension:", extension_file)
+
+"France is a beautiful country".split(" ")
+"some_notebook.ipynb".split(".")
 
 # >>>===Exercise 28===<<<
 # Write a program that calculates the execution time of a script.
 # Use the script from exercise 24 as an example. The program
 # should display the multiplication table from exercise 24 and
 # the execution time at the end.
+import time
+
+# store start time of the program
+start = time.time()
+
+#### THE CODE ###
+for i in range(0, 11):
+    print("8 x", i, "=", 8 * i)
+#################
+
+# calculate execution time of the program
+end = time.time()
+
+# Calculate execution time
+print("Code execution time:", end - start)
 
 # >>>===Exercise 29===<<<
 # Write a program that randomly shuffles the elements of a
 # list L. For example, L = [3,6,8,7,2,'s','ch','d'].
+import random
+
+L = [3, 6, 8, 7, 2, "s", "ch", "d"]
+
+# randomly mix elements of the L list
+random.shuffle(L)
+print(L)
 
 # >>>===Exercise 30===<<<
 # Write a program that randomly returns a number between 20 and 30.
+import random
+
+# choose a random number between 20 and 30
+random_number = random.randint(20, 30)
+print(random_number)
 
 # >>>===Exercise 31===<<<
 # Write a program that displays 8 lines of 16 consecutive numbers.
+
+# first loop to define the number of lines
+for i in range(8):
+    # second loop to display each line
+    # numbers from 5 to 20
+    for j in range(5, 21):
+        print(j, end=" ")
+    # to return to the line
+    print()
 
 # >>>===Exercise 32===<<<
 # Write a program that creates the list L = [3,6,9,12,15,18,21,24],
 # then creates a new list L1 using list comprehension that contains
 # the numbers from L divided by 3. Display L1 on the console.
+L = [3, 6, 9, 12, 15, 18, 21, 24]
+L1 = [l / 3 for l in L]
+print(L1)
 
 # >>>===Exercise 33===<<<
 # Write a program that creates a list L = [-6,5,-3,-1,2,8,-3.6],
 # then creates a new list L1 using list comprehension that contains
 # the numbers from L that are strictly greater than 0. Display L1.
+L = [-6, 5, -3, -1, 2, 8, -3.6]
+L1 = [l for l in L if l > 0]
+print(L1)
