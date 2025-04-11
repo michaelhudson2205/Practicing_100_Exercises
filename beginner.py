@@ -250,42 +250,95 @@ ch_reverse = ch[::-1]
 print(ch_reverse)
 
 # >>>===Exercise 20===<<<
+# Write a program that displays on the console the values of the
+# keys "Apple" and "Banana" from the dictionary
+# {"Apple": 3, "Banana": 7, "Kiwi": 1}
 
+# declaration of the dictionary d
+d = {"Apple": 3, "Banana": 7, "Kiwi": 1}
+
+# select the value of the key 'Apple'
+print(d["Apple"])
+
+# select the value of the key 'Banana'
+print(d["Banana"])
 
 # >>>===Exercise 21===<<<
-
+# Write a program that calculates the sum of the values in the
+# following dictionary:
+# {"Apple": 15, "Banana": 8, "Strawberry": 12, "Kiwi": 9, "Peach": 2}
+d = {"Apple": 15, "Banana": 8, "Strawberry": 12, "Kiwi": 9, "Peach": 2}
+sum(d.values())
 
 # >>>===Exercise 22===<<<
-
+# Write a program that truncates a decimal number to 2 digits after
+# the decimal point. For example, if we take the decimal number
+# 187.632587 the program should display 187.63.
+float("{:.2f}".format(187.637878))
 
 # >>>===Exercise 23===<<<
+# Write a program that formats the string "My name is myName
+# and I am age years old. I am learning the language
+# languageName". The program should format this string by
+# assigning the content of the following variables:
+# myName = "Julien", age = 32, languageName = "Python"
+myName = "Julien"
+age = 32
+languageName = "Python"
 
+ch = f"My name is {myName} and I am {age} years old. I am learning \
+the language {languageName}.".format(
+    myName, age, languageName
+)
+
+print(ch)
 
 # >>>===Exercise 24===<<<
-
+# Write a program that displays the multiplication table
+# of the number 8.
+for i in range(0, 11):
+    print("8 x", i, "=", 8 * i)
 
 # >>>===Exercise 25===<<<
+# Write a program that displays the directory where the
+# current Python script is located.
+import os
 
+print(os.getcwd())
 
 # >>>===Exercise 26===<<<
-
+# Write a program that allows you to remove an element from a list.
+# From the list L = [1,2,3,4,5] remove the number 1.
+L = [1, 2, 3, 4, 5]
+L.remove(1)
+L
 
 # >>>===Exercise 27===<<<
+# Write a program that allows you to retrieve the extension of a file.
 
 
 # >>>===Exercise 28===<<<
-
+# Write a program that calculates the execution time of a script.
+# Use the script from exercise 24 as an example. The program
+# should display the multiplication table from exercise 24 and
+# the execution time at the end.
 
 # >>>===Exercise 29===<<<
-
+# Write a program that randomly shuffles the elements of a
+# list L. For example, L = [3,6,8,7,2,'s','ch','d'].
 
 # >>>===Exercise 30===<<<
-
+# Write a program that randomly returns a number between 20 and 30.
 
 # >>>===Exercise 31===<<<
-
+# Write a program that displays 8 lines of 16 consecutive numbers.
 
 # >>>===Exercise 32===<<<
-
+# Write a program that creates the list L = [3,6,9,12,15,18,21,24],
+# then creates a new list L1 using list comprehension that contains
+# the numbers from L divided by 3. Display L1 on the console.
 
 # >>>===Exercise 33===<<<
+# Write a program that creates a list L = [-6,5,-3,-1,2,8,-3.6],
+# then creates a new list L1 using list comprehension that contains
+# the numbers from L that are strictly greater than 0. Display L1.
