@@ -1,4 +1,6 @@
-# >>>===Exercise 1===<<<
+"""blah, blah, blah"""
+
+# ? >>>===Exercise 1===<<<
 # Write a sequence of Python instructions to declare 3 variables a,b, and
 # c, assigning them the values 1, 'France', and 36.2 respectively, then
 # display the values of thes variables on the console.
@@ -9,7 +11,7 @@ print(a)
 print(b)
 print(c)
 
-# >>>===Exercise 2===<<<
+# ? >>>===Exercise 2===<<<
 # Write a sequence of Python instructions to declare 1 variable ch and
 # initialize it with the value 'hello', then modify this same variable to
 # contain the value 'how are you'. The program should display the
@@ -18,7 +20,7 @@ ch = "hello"
 ch = "how are you"
 print(ch)
 
-# >>>===Exercise 3===<<<
+# ? >>>===Exercise 3===<<<
 # Write a sequence of Python instructions to declare 2 variables x and y,
 # assigning them the values 3 and 8.5 respectively, then convert the type
 # of these variables to strings. The program should display the type of these # variables after conversion at the end.
@@ -31,13 +33,13 @@ y = str(y)
 print(type(x))
 print(type(y))
 
-# >>>===Exercise 4===<<<
+# ? >>>===Exercise 4===<<<
 # Write a program that asks the user for their weight in kilograms, then
 # stores it in a variable. The program should display the weight entered by the user at the end.
 weight = input("What is your weight in kilograms? ")
 print("The user's weight is:", weight)
 
-# >>>===Exercise 5===<<<
+# ? >>>===Exercise 5===<<<
 # Write a sequence of Python instructions to declare a variable var and
 # assign it the value "Hello", then the program should check whether the
 # variable var is an integer or a string. If it is an integer, the program
@@ -51,7 +53,7 @@ elif type(var) == int:
 else:
     print("The variable is not a String or an Integer")
 
-# >>>===Exercise 6===<<<
+# ? >>>===Exercise 6===<<<
 # Write a program that declares the variable d and assigns it the value 5,
 # then checks whether this variable is greater or less than 0. If the
 # variable is greater than 0, the program should display 'Positive',
@@ -62,7 +64,7 @@ if d >= 0:
 else:
     print("Negative")
 
-# >>>===Exercise 7===<<<
+# ? >>>===Exercise 7===<<<
 # Write a program that asks the user for their age, then stores it in a
 # variable. The program should check whether the user is older or
 # younger than 18 years. If the user's age is greater than or equal to 18,
@@ -81,7 +83,7 @@ if age >= 18:
 else:
     print("The user is a minor")
 
-# >>>===Exercise 8===<<<
+# ? >>>===Exercise 8===<<<
 # Write a Python program that displays the numbers from 1 to
 # 20 inclusive on the console. Create two versions, one with
 # the for loop and the other with the while loop.
@@ -96,7 +98,7 @@ while counter <= 20:
     print(counter)
     counter += 1
 
-# >>>===Exercise 9===<<<
+# ? >>>===Exercise 9===<<<
 # Write a Python program that displays only the odd numbers between 10
 # and 20 inclusive. Create two versions, one with the for loop and the
 # other with the while loop.
@@ -113,19 +115,19 @@ while counter <= 20:
         print(counter)
     counter += 1
 
-# >>>===Exercise 10===<<<
+# ? >>>===Exercise 10===<<<
 # Write the instruction that creates a list of numbers from 1 to 10
 # using list comprehension.
 L = [i for i in range(1, 11)]
 print(L)
 
-# >>>===Exercise 11===<<<
+# ? >>>===Exercise 11===<<<
 # Write the instruction that creates a list of even numbers from 1
 # to 10 using list comprehension.
 L = [i for i in range(1, 11) if i % 2 == 0]
 print(L)
 
-# >>>===Exercise 12===<<<
+# ? >>>===Exercise 12===<<<
 # Write the instructions that create the list L and assign it the value
 # [6, 8, 3, 4, 1, 12, 2, 9.2], then sort the numbers in the list in
 # ascending order. The program should display the list L after sorting
@@ -140,7 +142,7 @@ print(L)
 L.sort(reverse=True)
 print(L)
 
-# >>>===Exercise 13===<<<
+# ? >>>===Exercise 13===<<<
 # Write the instructions that create the list L and assign it the value
 # [3, 2, 2, 1, 9, 1, 2, 3, 7], then calculate the number of occurrences
 # of the number 1 in the list L.
@@ -149,11 +151,11 @@ print(L)
 L = [3, 2, 2, 1, 9, 1, 2, 3, 7]
 L.count(1)
 
-# >>>===Exercise 14===<<<
+# ? >>>===Exercise 14===<<<
 # Write the instructions that create an empty list L and then add the
 # intergers 10, 25, 30, 45, 90, and the strings "ab", "cd", "ef" to it.
 
-# >>>===Exercise 15===<<<
+# ? >>>===Exercise 15===<<<
 # Write a program that creates the list L and assigns it the value
 # [1,2,3,4,5,6,7,8,9,10], then creates a new list that takes every
 # third element from the list L. In this case we should end up with
@@ -175,7 +177,7 @@ for elt in elt_to_add:
     L2.append(elt)
 print(L2)
 
-# >>>===Exercise 16===<<<
+# ? >>>===Exercise 16===<<<
 # Write the instructions to sort a string in ascending alphabetical order.
 # For testing, take the string c = "france".
 # The program should output "acefnr"
@@ -199,7 +201,7 @@ print(c4)
 c5 = "".join(c4)
 print(c5)
 
-# >>>===Exercise 17===<<<
+# ? >>>===Exercise 17===<<<
 # Write a program that, given two lists L1 and L2, returns a list L3
 # containing the common elements between L1 and L2.
 # For testing, we will take the lists:
@@ -221,7 +223,7 @@ print(L3)
 L3 = list(L3)
 print(L3)
 
-# >>>===Exercise 18===<<<
+# ? >>>===Exercise 18===<<<
 # Write a program that sorts a list of tuples, L, in ascending order
 # based on the second element of each tuple.
 # The list is:
@@ -239,7 +241,7 @@ L = [("Apple", 15), ("Banana", 8), ("Strawberry", 12), ("Kiwi", 9), ("Peach", 2)
 L.sort(key=lambda x: x[1])
 print(L)
 
-# >>>===Exercise 19===<<<
+# ? >>>===Exercise 19===<<<
 # Write a program that allows you to reverse a string.
 # The program should reverse the variable ch containing
 # the phrase "Hello everyone"
@@ -249,7 +251,7 @@ ch = "Hello everyone"
 ch_reverse = ch[::-1]
 print(ch_reverse)
 
-# >>>===Exercise 20===<<<
+# ? >>>===Exercise 20===<<<
 # Write a program that displays on the console the values of the
 # keys "Apple" and "Banana" from the dictionary
 # {"Apple": 3, "Banana": 7, "Kiwi": 1}
@@ -263,20 +265,20 @@ print(d["Apple"])
 # select the value of the key 'Banana'
 print(d["Banana"])
 
-# >>>===Exercise 21===<<<
+# ? >>>===Exercise 21===<<<
 # Write a program that calculates the sum of the values in the
 # following dictionary:
 # {"Apple": 15, "Banana": 8, "Strawberry": 12, "Kiwi": 9, "Peach": 2}
 d = {"Apple": 15, "Banana": 8, "Strawberry": 12, "Kiwi": 9, "Peach": 2}
 sum(d.values())
 
-# >>>===Exercise 22===<<<
+# ? >>>===Exercise 22===<<<
 # Write a program that truncates a decimal number to 2 digits after
 # the decimal point. For example, if we take the decimal number
 # 187.632587 the program should display 187.63.
 float("{:.2f}".format(187.637878))
 
-# >>>===Exercise 23===<<<
+# ? >>>===Exercise 23===<<<
 # Write a program that formats the string "My name is myName
 # and I am age years old. I am learning the language
 # languageName". The program should format this string by
@@ -293,27 +295,27 @@ the language {languageName}.".format(
 
 print(ch)
 
-# >>>===Exercise 24===<<<
+# ? >>>===Exercise 24===<<<
 # Write a program that displays the multiplication table
 # of the number 8.
 for i in range(0, 11):
     print("8 x", i, "=", 8 * i)
 
-# >>>===Exercise 25===<<<
+# ? >>>===Exercise 25===<<<
 # Write a program that displays the directory where the
 # current Python script is located.
 import os
 
 print(os.getcwd())
 
-# >>>===Exercise 26===<<<
+# ? >>>===Exercise 26===<<<
 # Write a program that allows you to remove an element from a list.
 # From the list L = [1,2,3,4,5] remove the number 1.
 L = [1, 2, 3, 4, 5]
 L.remove(1)
 L
 
-# >>>===Exercise 27===<<<
+# ? >>>===Exercise 27===<<<
 # Write a program that allows you to retrieve the extension of a file.
 import os
 
@@ -331,7 +333,7 @@ print("File extension:", extension_file)
 "France is a beautiful country".split(" ")
 "some_notebook.ipynb".split(".")
 
-# >>>===Exercise 28===<<<
+# ? >>>===Exercise 28===<<<
 # Write a program that calculates the execution time of a script.
 # Use the script from exercise 24 as an example. The program
 # should display the multiplication table from exercise 24 and
@@ -352,7 +354,7 @@ end = time.time()
 # Calculate execution time
 print("Code execution time:", end - start)
 
-# >>>===Exercise 29===<<<
+# ? >>>===Exercise 29===<<<
 # Write a program that randomly shuffles the elements of a
 # list L. For example, L = [3,6,8,7,2,'s','ch','d'].
 import random
@@ -363,7 +365,7 @@ L = [3, 6, 8, 7, 2, "s", "ch", "d"]
 random.shuffle(L)
 print(L)
 
-# >>>===Exercise 30===<<<
+# ? >>>===Exercise 30===<<<
 # Write a program that randomly returns a number between 20 and 30.
 import random
 
@@ -371,7 +373,7 @@ import random
 random_number = random.randint(20, 30)
 print(random_number)
 
-# >>>===Exercise 31===<<<
+# ? >>>===Exercise 31===<<<
 # Write a program that displays 8 lines of 16 consecutive numbers.
 
 # first loop to define the number of lines
@@ -383,7 +385,7 @@ for i in range(8):
     # to return to the line
     print()
 
-# >>>===Exercise 32===<<<
+# ? >>>===Exercise 32===<<<
 # Write a program that creates the list L = [3,6,9,12,15,18,21,24],
 # then creates a new list L1 using list comprehension that contains
 # the numbers from L divided by 3. Display L1 on the console.
@@ -391,7 +393,7 @@ L = [3, 6, 9, 12, 15, 18, 21, 24]
 L1 = [l / 3 for l in L]
 print(L1)
 
-# >>>===Exercise 33===<<<
+# ? >>>===Exercise 33===<<<
 # Write a program that creates a list L = [-6,5,-3,-1,2,8,-3.6],
 # then creates a new list L1 using list comprehension that contains
 # the numbers from L that are strictly greater than 0. Display L1.
