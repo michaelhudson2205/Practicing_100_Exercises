@@ -1,7 +1,7 @@
 """blah, blah, blah"""
 
 
-# ? >>>===Exercise 34===<<<
+# ? >>>===Ex 34: Mathematical function===<<<
 # Write a function named f(a,b,x) that takes three integers a, b and x as
 # parameters and returns the result of the following function:
 # f(a,b,x) = a*(x**3) + 2*a(x**2) + b
@@ -16,7 +16,7 @@ f(3, 0, 1)  # should return 9
 f(0, 2, 2)  # should return 2
 
 
-# ? >>>===Exercise 35===<<<
+# ? >>>===Ex 35: Presence of an element in a list===<<<
 # Write a function named CheckPresence(a,L) that takes a list L and an
 # element a as parameters. The function returns True if the element a
 # exists in the list L, and False if the element a does not exist in the list L.
@@ -34,19 +34,32 @@ def CheckPresence(a, L):
 CheckPresence(2, [1, 2, 3, 4, 5, 6])  # should return True
 CheckPresence(-1, [3, 6, 9, 7, "abcr"])  # should return False
 
-# ? >>>===Exercise 36===<<<
+# ? >>>===Ex 36: Calculation of the sum of digits===<<<
 # Write a program that calculates the sum of the digits of a
 # number. The program should display the result on the console.
 # E.g., for the number 149, the program should display 14.
 # E.g., for the number 3018, the program should display 12.
+number = 3018
+number_str = str(number)
+sum_of_digits = 0  # Initialize sum_of_digits to 0
+for digit in number_str:
+    sum_of_digits += int(digit)  # Convert digit to int and add to sum_of_digits
+print(sum_of_digits)  # Display the result on the console
 
-# ? >>>===Exercise 37===<<<
+number = 149
+number_str = str(number)
+sum_of_digits = 0  # Initialize sum_of_digits to 0
+for digit in number_str:
+    sum_of_digits += int(digit)  # Convert digit to int and add to sum_of_digits
+print(sum_of_digits)  # Display the result on the console
+
+# ? >>>===Ex 37: Sum of a list===<<<
 # Write a function called calculateSum(L) that takes a list of
 # integers as a parameter and returns the sum of the elements in the list.
 # E.g., calculateSum([3,2,6,9,-1,5]) should return 24.
 # E.g., calculateSum([-3,-6,0,1,2,7]) should return 1.
 
-# ? >>>===Exercise 38===<<<
+# ? >>>===Ex 38: Removing Duplicates===<<<
 # Write a function removeDuplicates(L) that takes a list of integers
 # L as a parameter and returns the List without any duplicate elements
 # in ascending order.
@@ -55,7 +68,7 @@ CheckPresence(-1, [3, 6, 9, 7, "abcr"])  # should return False
 # E.g., removeDuplicates([0,5,9,10,3.2,1,-3])
 # should return [-3,0,1,3.2,5,9,10].
 
-# ? >>>===Exercise 39===<<<
+# ? >>>===Ex 39: Adding elements to a dictionary===<<<
 # Write a function named addElementDict(key,value,d) that takes three
 # parameters as input: a dictionary d, a key and its associated value.
 # The function should add this key and value to the dictionary d.
@@ -66,110 +79,110 @@ CheckPresence(-1, [3, 6, 9, 7, "abcr"])  # should return False
 # E.g., addElementDict("weight", 65.3, {})
 # should return {"weight": 65.3}
 
-# ? >>>===Exercise 40===<<<
+# ? >>>===Ex 40: Recreation of the max function===<<<
 # Write a function maximum(L) that takes a list of integers as a
 # parameter and returns the largest value.
 # Note: The idea is not to use the already existing max() function.
 # E.g., maximum([-9,2,4,1,8,0]) should return 8.
 # E.g., maximum([-3,1,7,6,2,3]) should return 7.
 
-# ? >>>===Exercise 41===<<<
+# ? >>>===Ex 41: Sum of a Sublist===<<<
 
 
-# ? >>>===Exercise 42===<<<
+# ? >>>===Ex 42: Pattern Creation===<<<
 
 
-# ? >>>===Exercise 43===<<<
+# ? >>>===Ex 43: Recreation of the min function===<<<
 
 
-# ? >>>===Exercise 44===<<<
+# ? >>>===Ex 44: Recreation of the len function===<<<
 
 
-# ? >>>===Exercise 45===<<<
+# ? >>>===Ex 45: Calculating the average of a list of numbers===<<<
 
 
-# ? >>>===Exercise 46===<<<
+# ? >>>===Ex 46: Divisors of an integer===<<<
 
 
-# ? >>>===Exercise 47===<<<
+# ? >>>===Ex 47: Capitalisation Check===<<<
 
 
-# ? >>>===Exercise 48===<<<
+# ? >>>===Ex 48: List Concatenation===<<<
 
 
-# ? >>>===Exercise 49===<<<
+# ? >>>===Ex 49: Calculating the Number of Values in a Dictionary===<<<
 
 
-# ? >>>===Exercise 50===<<<
+# ? >>>===Ex 50: Concatenation of dictionaries===<<<
 
 
-# ? >>>===Exercise 51===<<<
+# ? >>>===Ex 51: Calculating the factorial of a number===<<<
 
 
-# ? >>>===Exercise 52===<<<
+# ? >>>===Ex 52: Divisors & Multiples===<<<
 
 
-# ? >>>===Exercise 53===<<<
+# ? >>>===Ex 53: Presence of a Vowel in a String===<<<
 
 
-# ? >>>===Exercise 54===<<<
+# ? >>>===Ex 54: Removing Spaces in a Sentence===<<<
 
 
-# ? >>>===Exercise 55===<<<
+# ? >>>===Ex 55: Position of an Element in a List===<<<
 
 
-# ? >>>===Exercise 56===<<<
+# ? >>>===Ex 56: Filter words by length===<<<
 
 
-# ? >>>===Exercise 57===<<<
+# ? >>>===Ex 57: Reverse the Order of Words===<<<
 
 
-# ? >>>===Exercise 58===<<<
+# ? >>>===Ex 58: Number of Occurrences in a List===<<<
 
 
-# ? >>>===Exercise 59===<<<
+# ? >>>===Ex 59: Union of lists without duplication===<<<
 
 
-# ? >>>===Exercise 60===<<<
+# ? >>>===Ex 60: Calculation of the GCD===<<<
 
 
-# ? >>>===Exercise 61===<<<
+# ? >>>===Ex 61: Reading a file===<<<
 
 
-# ? >>>===Exercise 62===<<<
+# ? >>>===Ex 62: Number of Occurrences of a Word in a File===<<<
 
 
-# ? >>>===Exercise 63===<<<
+# ? >>>===Ex 63: Delete a Character from a File===<<<
 
 
-# ? >>>===Exercise 64===<<<
+# ? >>>===Ex 64: Presence of a number in a file===<<<
 
 
-# ? >>>===Exercise 65===<<<
+# ? >>>===Ex 65: Number of files in a folder===<<<
 
 
-# ? >>>===Exercise 66===<<<
+# ? >>>===Ex 66: Write in a file===<<<
 
 
-# ? >>>===Exercise 67===<<<
+# ? >>>===Ex 67: The key with the maximum number of unique values===<<<
 
 
-# ? >>>===Exercise 68===<<<
+# ? >>>===Ex 68: Ask the user for a list===<<<
 
 
-# ? >>>===Exercise 69===<<<
+# ? >>>===Ex 69: Number of days and hours===<<<
 
 
-# ? >>>===Exercise 70===<<<
+# ? >>>===Ex 70: Generate a Password Randomly===<<<
 
 
-# ? >>>===Exercise 71===<<<
+# ? >>>===Ex 71: Trigonometric function===<<<
 
 
-# ? >>>===Exercise 72===<<<
+# ? >>>===Ex 72===<<<
 
 
-# ? >>>===Exercise 73===<<<
+# ? >>>===Ex 73===<<<
 
 
-# ? >>>===Exercise 74===<<<
+# ? >>>===Ex 74===<<<
