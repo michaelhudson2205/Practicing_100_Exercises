@@ -87,27 +87,70 @@ print(sum_of_digits)  # Display the result on the console
 # E.g., maximum([-3,1,7,6,2,3]) should return 7.
 
 # ? >>>===Ex 41: Sum of a Sublist===<<<
+# Write the code for the function sumSubList(L,i,j) which takes
+# three parameters: a list L, a starting calculation index i, and an
+# ending calculation index j. The function should return the sum of
+# the numbers located between indices i and j in the list L.
+# E.g., sumSubList([4,10,12,16,18],2,4) should return 46.
+# E.g., sumSubList([2,4,6,8,10,12],0,2) should return 12.
 
 
 # ? >>>===Ex 42: Pattern Creation===<<<
+# Write a program that displays the pyramid below:
+# ^
+# ^^
+# ^^^^
+# ^^^^^^
+# ^^^^^^^^
 
 
 # ? >>>===Ex 43: Recreation of the min function===<<<
+# Write a function minimum(L) that takes a list of integers as a
+# parameter and returns the smallest value.
+# Note: The idea is not to use the already existing min() function.
+# E.g., minimum([-9,2,4,1,8,0]) should return -9.
+# E.g., minimum([-3,1,7,6,2,3]) should return -3.
 
 
 # ? >>>===Ex 44: Recreation of the len function===<<<
-
+# Write a function length(L) that takes a list as a parameter and
+# returns the number of elements in the list.
+# Note: The idea is not to use the already existing len() function.
+# E.g., length([3,6,7,"abcd", [1,3,57],True]) should return 6.
+# E.g., length([]) should return 0.
 
 # ? >>>===Ex 45: Calculating the average of a list of numbers===<<<
+# Write a function averageList(L) that takes a list of integers
+# as a parameter and returns the average of the elements in the list.
+# E.g., averageList([1,2,3,4,5,6,7]) should return 4.0
+# E.g., averageList([3,0,-1,5,6,9,17]) should return 5.571428571428571
 
 
 # ? >>>===Ex 46: Divisors of an integer===<<<
+# Write a function divisor(n) that takes an integer n as a parameter
+# and returns a list containing all the positive divisors of n in
+# ascending order.
+# E.g., divisor(3) should return [1,3]
+# E.g., divisor(9) should return [1,3,9]
 
 
 # ? >>>===Ex 47: Capitalisation Check===<<<
+# Write a function checkCapitals(sentence) that takes a sentence
+# as a parameter and checks if the sentence contains at least one
+# uppercase letter. If that is the case, the function should return
+# True, otherwise it should return False.
+# E.g., checkCapitals("Hello World") should return True.
+# E.g., checkCapitals("hello world") should return False.
 
 
 # ? >>>===Ex 48: List Concatenation===<<<
+# Write a function concatList(L1, L2, L3) that takes three lists
+# L1, L2 and L3 as parameters and returns the concatenation
+# of the three lists.
+# E.g., cocatList([0,9,8],[2,6,9],[True,False,"abc"])
+# should return [0,9,8,2,6,9,True,False,"abc"]
+# E.g., concatList([[38,-1],3,-9],["xz","France"],[])
+# should return [[38,-1],3,-9,"xz","France"]
 
 
 # ? >>>===Ex 49: Calculating the Number of Values in a Dictionary===<<<
