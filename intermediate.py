@@ -53,11 +53,23 @@ for digit in number_str:
     sum_of_digits += int(digit)  # Convert digit to int and add to sum_of_digits
 print(sum_of_digits)  # Display the result on the console
 
+
 # ? >>>===Ex 37: Sum of a list===<<<
 # Write a function called calculateSum(L) that takes a list of
 # integers as a parameter and returns the sum of the elements in the list.
 # E.g., calculateSum([3,2,6,9,-1,5]) should return 24.
 # E.g., calculateSum([-3,-6,0,1,2,7]) should return 1.
+def calculateSum(L):
+    """Calculate the sum of elements in list L"""
+    total = 0  # Initialize total to 0
+    for number in L:
+        total += number  # Add each number to total
+    return total  # Return the total sum
+
+
+calculateSum([3, 2, 6, 9, -1, 5])
+calculateSum([-3, -6, 0, 1, 2, 7])
+
 
 # ? >>>===Ex 38: Removing Duplicates===<<<
 # Write a function removeDuplicates(L) that takes a list of integers
@@ -67,6 +79,31 @@ print(sum_of_digits)  # Display the result on the console
 # should return [-1,0,1,3,5,7].
 # E.g., removeDuplicates([0,5,9,10,3.2,1,-3])
 # should return [-3,0,1,3.2,5,9,10].
+def removeDuplicates(L):
+    """Remove duplicates from list L and return sorted list"""
+    unique_elements = set(L)  # Convert list to set to remove duplicates
+    sorted_list = sorted(unique_elements)  # Sort the unique elements
+    return sorted_list  # Return the sorted list
+
+
+removeDuplicates([0, 3, 5, 7, 3, 5, 1, -1, 0])
+
+
+def removeDuplicatesB(L):
+    for elt in L:
+        elt_occ = L.count(elt)
+        if elt_occ > 1:
+            for i in range(elt_occ - 1):
+                L.remove(elt)
+    L.sort()
+    return L
+
+
+removeDuplicatesB([0, 3, 5, 7, 3, 5, 1, -1, 0])  # should return [-1,0,1,3,5,7]
+removeDuplicatesB(
+    [0, 5, 9, 5, 10, 5, 3.2, 1, 5, -3]
+)  # should return [-3,0,1,3.2,5,9,10]
+
 
 # ? >>>===Ex 39: Adding elements to a dictionary===<<<
 # Write a function named addElementDict(key,value,d) that takes three
@@ -78,6 +115,15 @@ print(sum_of_digits)  # Display the result on the console
 # should return {"julien": 14, "laurent": 31, "baptiste": 29}
 # E.g., addElementDict("weight", 65.3, {})
 # should return {"weight": 65.3}
+def addElementDict(key, value, d):
+    """Add key-value pair to dictionary d"""
+    d[key] = value  # Add key-value pair to dictionary
+    return d  # Return modified dictionary
+
+
+addElementDict("baptiste", 29, {"julien": 14, "laurent": 31})
+addElementDict("weight", 65.3, {})
+
 
 # ? >>>===Ex 40: Recreation of the max function===<<<
 # Write a function maximum(L) that takes a list of integers as a
@@ -85,6 +131,17 @@ print(sum_of_digits)  # Display the result on the console
 # Note: The idea is not to use the already existing max() function.
 # E.g., maximum([-9,2,4,1,8,0]) should return 8.
 # E.g., maximum([-3,1,7,6,2,3]) should return 7.
+def maximum(L):
+    """Return the maximum value in list L"""
+    max_value = L[0]  # Initialize max_value to the first element of L
+    for number in L:
+        if number > max_value:  # If current number is greater than max_value
+            max_value = number  # Update max_value
+    return max_value  # Return the maximum value
+
+
+maximum([-9, 2, 4, 1, 8, 0])
+maximum([-3, 1, 7, 6, 2, 3])
 
 # ? >>>===Ex 41: Sum of a Sublist===<<<
 # Write the code for the function sumSubList(L,i,j) which takes
@@ -154,12 +211,34 @@ print(sum_of_digits)  # Display the result on the console
 
 
 # ? >>>===Ex 49: Calculating the Number of Values in a Dictionary===<<<
+# Write a function valueCountDict(d) that takes a dictionary as a
+# parameter and returns the number of values contained in the lists
+# associated with the keys of the dictionary.
+# Note: for the purpose of this exercise, it is assumed that all
+# values associated with keys are in the form of lists.
+# E.g., valueCountDict({"a":[1,2,3],"b":[3,"p"], "c":[8]})
+# should return 6
+# E.g., valueCountDict({"Julie":[12,60.1],"Fred":[26,75.6], "David":[]})
+# should return 4
 
 
 # ? >>>===Ex 50: Concatenation of dictionaries===<<<
+# Write a function concatDict(d1,d2) that takes two dictionaries
+# d1 and d2 as parameters and returns the concatenation of the two
+# dictionaries.
+# E.g., concatDict({"a":3,"b":6},{"c":2,"d":-1})
+# should return {"a":3,"b":6,"c":2,"d":-1}
+# E.g., concatDict({"d":[2.9,4.1]},{"p":[]})
+# should return {"d":[2.9,4.1],"p":[]}
 
 
 # ? >>>===Ex 51: Calculating the factorial of a number===<<<
+# Write a function computeFactorial(n) that calculates the factorial
+# of a number (in the mathematical sense) and returns the result
+# obtained after this calculation.
+# E.g., computeFactorial(3) should return 6
+# E.g., computeFactorial(9) should return 362880
+# E.g., computeFactorial(0) should return 1
 
 
 # ? >>>===Ex 52: Divisors & Multiples===<<<
