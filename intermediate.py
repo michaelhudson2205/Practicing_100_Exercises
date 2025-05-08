@@ -143,6 +143,7 @@ def maximum(L):
 maximum([-9, 2, 4, 1, 8, 0])
 maximum([-3, 1, 7, 6, 2, 3])
 
+
 # ? >>>===Ex 41: Sum of a Sublist===<<<
 # Write the code for the function sumSubList(L,i,j) which takes
 # three parameters: a list L, a starting calculation index i, and an
@@ -150,6 +151,20 @@ maximum([-3, 1, 7, 6, 2, 3])
 # the numbers located between indices i and j in the list L.
 # E.g., sumSubList([4,10,12,16,18],2,4) should return 46.
 # E.g., sumSubList([2,4,6,8,10,12],0,2) should return 12.
+def sumSubList(L, i, j):
+    ## select the sub-list
+    Lij = L[i : j + 1]  # Select sub-list from index i to j (inclusive)
+    ## initialise the variable sum_ to 0
+    sum_ = 0  # Initialize sum_ to 0
+    ## loop through the sub-list and add each element to sum_
+    for number in Lij:
+        sum_ += number
+    ## return the sum
+    return sum_  # Return the total sum
+
+
+sumSubList([4, 10, 12, 16, 18], 2, 4)  # should return 46
+sumSubList([2, 4, 6, 8, 10, 12], 0, 2)  # should return 12
 
 
 # ? >>>===Ex 42: Pattern Creation===<<<
@@ -159,6 +174,9 @@ maximum([-3, 1, 7, 6, 2, 3])
 # ^^^^
 # ^^^^^^
 # ^^^^^^^^
+for nbr_star in range(1, 11):
+    if nbr_star % 2 == 0 or nbr_star == 1:
+        print("*" * nbr_star)
 
 
 # ? >>>===Ex 43: Recreation of the min function===<<<
@@ -167,7 +185,17 @@ maximum([-3, 1, 7, 6, 2, 3])
 # Note: The idea is not to use the already existing min() function.
 # E.g., minimum([-9,2,4,1,8,0]) should return -9.
 # E.g., minimum([-3,1,7,6,2,3]) should return -3.
+def minimum(L):
+    """Return the minimum value in list L"""
+    min_value = L[0]  # Initialize min_value to the first element of L
+    for number in L:
+        if number < min_value:  # If current number is less than min_value
+            min_value = number  # Update min_value
+    return min_value  # Return the minimum value
 
+
+minimum([9, 2, 4, 1, -8, 0])  # should return -9
+minimum([-3, 1, 7, 6, 2, 3])  # should return -3
 
 # ? >>>===Ex 44: Recreation of the len function===<<<
 # Write a function length(L) that takes a list as a parameter and
